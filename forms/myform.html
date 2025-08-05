@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myform.css">
+    <title>My Form</title>
+</head>
+<body>
+    <div id="container">
+        <form action="#">
+            <h1>Sign Up <span>Today</span></h1>
+            <div>
+                <label for="first-name">First Name:</label>
+                <input type="text" name="firstName" id="first-name" autofocus checked>
+            </div>
+            <div>
+                <label for="surname">Surname:</label>
+                <input type="text" name="surname" id="surname">
+            </div>
+            <div>
+                <label for="Date-of-birth">Date-of-birth:</label>
+                <input type="date" name="DOB" id="Date-of-birth">
+            </div>
+            <div>
+                <label for="experience">Years of Experience:</label>
+                <input type="tel" name="experience" id="experience">
+            </div>
+            <p>Are you Married:</p>
+            <fieldset>
+                <div class="radio-buttons">
+                    <input type="radio" id="yes" name="status">
+                    <label for="yes">Yes</label>
+                </div>
+                <div class="radio-buttons">
+                    <input type="radio" id="no" name="status">
+                    <label for="no">No</label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

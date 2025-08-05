@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 10px;
+    width: min(400px, 50vw);
+    border: solid;
+}
+
+form h1 {
+    text-align: center;
+    font-size: min(35px,5vw);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: min(20px, 3vw);
+}
+
+form > div {
+    margin-bottom: 10px;
+
+}
+
+.radio-buttons {
+    display: flex;
+}
+
+input {
+    width: 350px;
+    height: 30px;
+}

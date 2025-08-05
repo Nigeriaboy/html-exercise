@@ -1,0 +1,97 @@
+:root {
+    --bg-clr: white;
+    --text-clr: black;
+    --mgn-btm: 10px;
+    --pad: 10px;
+    --space-around: 2px;
+    --shadow: 0px 0px 5px rgba(0,0,0, 0.5);
+    --shadow-up: 0px 0px 8px 3px rgba(0,0,0,0.5);
+    --border-clr: var(--text-clr)
+}
+
+body {
+    margin: auto;
+    background-color: var(--bg-clr);
+    color: var(--text-clr);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav {
+    background-color: var(--bg-clr);
+    box-shadow: var(--shadow);
+    padding: var(--space-around);
+    margin-top: 0;
+    margin-bottom: var(--mgn-btm);
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: var();
+}
+
+nav > ul > li {
+    border-left: 3px solid red;
+    padding-left: var(--pad);
+}
+
+.container {
+    padding: 10px;
+    background-color: var(--bg-clr);
+    font-size: 22px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p {
+    width: 70ch;
+}
+
+button {
+    padding: 50px;
+    font-size: 20px;
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: var(--bg-clr);
+    border: 1px solid var(--border-clr);
+    color: var(--text-clr);
+    transition: all ease 0.3s;
+}
+
+.dark-theme {
+    --bg-clr:black;
+    --text-clr: rgb(255, 255, 255);
+    --shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+    --shadow-up: 0px 0px 8px 3px rgba(255, 255, 255, 0.5);
+    --border-clr: var(--text-clr)
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    padding: 25px 0 25px 0;
+    background-color: grey;
+    width: 100vw;
+    color: var(--bg-clr);
+    background-color: var(--text-clr);
+    font-size: 20px;
+    text-align: center;
+    box-shadow: var(--shadow-up);
+}
+
+footer a {
+    list-style: none;
+    color: var(--bg-clr);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline red;
+}

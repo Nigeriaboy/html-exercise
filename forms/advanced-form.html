@@ -1,0 +1,41 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input {
+            appearance: none;
+            border: solid;
+            height: 50px;
+            width: 50px;
+
+        }
+
+        input::before {
+            content: "->";
+            font-size: 100%;
+            visibility: hidden;
+
+        }
+
+        input:checked::before {
+            background-color: greenyellow;
+            visibility:visible;
+        }
+        input:disabled {
+            border: solid 1px grey;
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="">
+        <input type="checkbox">
+        <input type="checkbox">
+    </form>
+</body>
+</html>
